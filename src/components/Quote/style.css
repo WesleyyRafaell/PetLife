@@ -1,0 +1,25 @@
+.containerQuote .quote {
+  width: 1290px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.containerQuote .quote img {
+  width: 50px;
+}
+
+.containerQuote .quoteContent {
+  margin: 31.6px 0px 0px 10px;
+  max-width: 390px;
+}
+
+.containerQuote .quoteContent h3{
+  color: var(--color-primary);
+}
+
+.containerQuote .quoteContent p{
+  color: var(--color-second);
+  font-weight: 600;
+  margin-top: 9.6px;
+}
