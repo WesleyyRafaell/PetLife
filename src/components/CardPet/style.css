@@ -1,0 +1,31 @@
+.containerCardsPets .pets .pet {
+  max-width: 260px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31px;
+  border-radius: 20px;
+  margin: 0 20px 40px 20px;
+}
+
+.containerCardsPets .pets .pet img {
+  border-radius: 10px;
+  max-width: 185px;
+}
+
+.containerCardsPets .pets .pet h3 {
+  color: var(--color-primary);
+  font-size: 2.1rem;
+  padding: 18.2px 0 16.7px 0;
+}
+
+.containerCardsPets .pets .pet button {
+  background: var(--color-second);
+  color: var(--color-white);
+  border: none;
+  width: 100%;
+  padding: 7.5px;
+  border-radius: 10px;
+  font-size: 1.7rem;
+}

@@ -5,18 +5,20 @@
 }
 
 :root {
-  --color-white:#fff;
+  --color-white: #fff;
   --color-background: #F0F0F5;
   --color-primary: #E6567A;
   --color-second: #47C9AF;
   --color-tertiary: #3B3C3D;
 }
 
-@media(max-width: 1080px){
-  html{
-    font-size: 62.5%;
-  }
+html{
+  font-size: 62.5%;
 }
+
+/* @media(max-width: 1080px){
+  
+} */
 
 /* @media(max-width: 720px){
   html{

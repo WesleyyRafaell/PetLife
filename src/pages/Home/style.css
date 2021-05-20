@@ -2,3 +2,14 @@
   padding-top: 50px;
 }
 
+.containerCardsPets {
+  padding: 76px 0;
+}
+
+.containerCardsPets .pets {
+  max-width: 1290px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
