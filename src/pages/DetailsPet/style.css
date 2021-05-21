@@ -1,0 +1,70 @@
+.containerDetailsPet main .container {
+  max-width: 1290px;
+  margin: auto;
+  background: url('../../assets/backgroundLeft.svg')left 30px/100px no-repeat,
+  url('../../assets/BackgroundRight.svg')right  30px/100px no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.containerDetailsPet .card {
+  width: 320px;
+  background: var(--color-white);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.containerDetailsPet .card .photoPet {
+  width: 100%;
+  height: 320px;
+}
+
+.containerDetailsPet .card .photoPet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.containerDetailsPet .card .informationPet {
+  padding: 12px 20px;
+}
+
+.containerDetailsPet .card .informationPet .name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+  color: var(--color-tertiary);
+}
+
+.containerDetailsPet .card .informationPet .owner {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.containerDetailsPet .card footer {
+  border-top: 1px solid;
+  padding-top: 14.4px;
+  margin-top: 10px;
+}
+
+.containerDetailsPet .card footer .SocialItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.containerDetailsPet .card footer .SocialItem img {
+  margin-right: 7.9px;
+  width: 21.9px;
+}
+
+.containerDetailsPet .card footer .SocialItem a {
+  font-size: 1.1rem;
+  color: #6A7CDA;
+}
