@@ -20,12 +20,12 @@
   padding: 18.2px 0 16.7px 0;
 }
 
-.containerCardsPets .pets .pet button {
+.containerCardsPets .pets .pet a {
   background: var(--color-second);
   color: var(--color-white);
-  border: none;
   width: 100%;
   padding: 7.5px;
   border-radius: 10px;
   font-size: 1.7rem;
+  text-align: center;
 }

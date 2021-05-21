@@ -11,11 +11,11 @@ header .container {
   justify-content: space-between;
 }
 
-header .container .logo {
+header .container .logo img {
   width: 100px;
 }
 
-header .container button {
+header .container .button a {
   background-color: var(--color-primary);
   border: none;
   width: 49px;
@@ -27,6 +27,6 @@ header .container button {
   cursor: pointer;
 }
 
-header .container button img {
+header .container .button a img {
   width: 20px;
 }

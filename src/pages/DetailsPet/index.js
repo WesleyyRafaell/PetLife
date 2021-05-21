@@ -1,5 +1,9 @@
+import Header from "../../components/Header";
+
 export default function DetailsPet() {
   return(
-    <h1>Details</h1>
+    <div className="containerDetailsPet">
+      <Header path="/" page="home" />
+    </div>
   )
 }

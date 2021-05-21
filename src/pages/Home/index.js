@@ -8,21 +8,13 @@ import CardPet from '../../components/CardPet';
 export default function Home() {
   return (
     <div className="homeContainer">
-      <Header />
+      <Header path="/create-pet" page="create" />
       <main>
         <div className="containerQuote">
           <Quote />
         </div>
         <div className="containerCardsPets">
           <div className="pets">
-            <CardPet />
-            <CardPet />
-            <CardPet />
-            <CardPet />
-            <CardPet />
-            <CardPet />
-            <CardPet />
-            <CardPet />
             <CardPet />
             <CardPet />
           </div>

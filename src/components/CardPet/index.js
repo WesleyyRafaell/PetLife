@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'; 
+
 import truta from '../../assets/truta.svg';
 
 import './style.css';
@@ -7,7 +9,9 @@ export default function CardPet() {
     <div className="pet">
       <img src={truta} alt="pet foto" />
       <h3>Truta</h3>
-      <button>Detalhes</button>
+      <Link to="/details-pet">
+        Detalhes
+      </Link>
     </div>
   )
 }
