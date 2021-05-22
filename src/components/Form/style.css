@@ -1,0 +1,42 @@
+.containerCreatePet form {
+  background: var(--color-white);
+  width: 560px;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.containerCreatePet form h4 {
+  color: var(--color-tertiary);
+  border-bottom: 1px solid var(--color-background);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.containerCreatePet form .containerBoxInput {
+  margin-bottom: 40px;
+}
+
+.containerCreatePet form .boxInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25.9px;
+}
+
+.containerCreatePet form .boxInput label {
+  font-size: 1.5rem;
+}
+
+.containerCreatePet form .boxInput label span {
+  color: #de0505;
+}
+
+.containerCreatePet form .buttonInput button {
+  background: var(--color-second);
+  color: var(--color-white);
+  width: 100%;
+  padding: 7.5px;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+  border: none;
+}

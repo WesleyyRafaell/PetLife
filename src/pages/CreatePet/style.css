@@ -1,0 +1,16 @@
+.containerCreatePet main .container {
+  max-width: 1290px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerCreatePet main {
+  padding: 30px 0;
+}
+
+.containerCreatePet h3 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}

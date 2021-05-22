@@ -1,0 +1,9 @@
+input{
+  background: #F0F0F5;
+  border: 1px solid #3b3c3d42;
+  border-radius: 14.2px;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  color: var(--color-tertiary);
+}
