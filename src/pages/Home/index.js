@@ -55,7 +55,7 @@ export default function Home() {
               </div>
               :
               pets.map(({ id, name }) => (
-                <CardPet key={id} name={name} />
+                <CardPet key={id} id={id} name={name} />
               ))
             }
           </div>

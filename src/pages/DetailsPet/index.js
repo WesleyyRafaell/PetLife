@@ -1,36 +1,58 @@
-import Header from "../../components/Header";
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import firebase from '../../configs/FirebaseConnection';
 
-import pet from '../../assets/pet.svg';
-import owner from '../../assets/owner.svg';
+
+// components 
+import Header from "../../components/Header";
+import CardPetDetail from '../../components/CardPetDetail';
 
 import './style.css';
+import LoaderSpinner from '../../components/Loader';
 
 export default function DetailsPet() {
+  const [pet, setPet] = useState('');
+  const { state } = useLocation();
+
+  useEffect(() => {
+    (
+      async () => {
+        try {
+          const snapshot = await firebase.firestore().collection('Pet').doc(state).get();
+
+          setPet({
+            name: snapshot.data().name,
+            description: snapshot.data().description,
+            socialNetworkOwner: snapshot.data().socialNetworkOwner,
+            owner: snapshot.data().owner,
+            socialNetworkPet: snapshot.data().socialNetworkPet
+          })
+
+        } catch (error) {
+          console.log('deu ruim:', error)
+        }
+      }
+    )()
+  }, [state])
+
   return (
     <div className="containerDetailsPet">
       <Header path="/" page="home" />
       <main>
         <div className="container">
-          <div className="card">
-            <div className="photoPet">
-              <img src="https://i.imgur.com/AenYVrE.jpg" alt="pet foto" />
-            </div>
-            <div className="informationPet">
-              <h3 className="name">Truta</h3>
-              <p>Cachorro mais simpático, gente boa e perfeito que algúem poderia ter.</p>
-              <p className="owner">Cuidado por: Wesley Rafael</p>
-              <footer>
-                <div className="SocialItem">
-                  <img src={pet} alt="" />
-                  <a target="_blank" rel="noreferrer" href="https://www.instagram.com/princesa_lisbella/">https://www.instagram.com/princesa_lisbella/</a>
-                </div>
-                <div className="SocialItem">
-                  <img src={owner} alt="" />
-                  <a target="_blank" rel="noreferrer" href="https://www.instagram.com/weslieysanto/">https://www.instagram.com/weslieysanto/</a>
-                </div>
-              </footer>
-            </div>
-          </div>
+          {pet === '' ?
+            <div>
+              <LoaderSpinner />
+            </div> :
+
+            <CardPetDetail
+              name={pet.name}
+              description={pet.description}
+              socialNetworkPet={pet.socialNetworkPet}
+              owner={pet.owner}
+              socialNetworkOwner={pet.socialNetworkOwner}
+            />
+          }
         </div>
       </main>
     </div>
