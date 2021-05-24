@@ -1,5 +1,3 @@
-import firebase from './configs/FirebaseConnection';
-
 import Routes from './routes';
 import './styles/global.css';
 
