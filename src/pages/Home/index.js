@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import firebase from '../../configs/FirebaseConnection';
 
+
 import './style.css';
 
 // components
 import Header from '../../components/Header';
 import Quote from '../../components/Quote';
 import CardPet from '../../components/CardPet';
+import LoaderSpinner from '../../components/Loader';
 
 export default function Home() {
   const [pets, setPets] = useState([]);
@@ -47,9 +49,15 @@ export default function Home() {
         </div>
         <div className="containerCardsPets">
           <div className="pets">
-            {pets.map(({ id, name }) => (
-              <CardPet key={id} name={name}  />
-            ))}
+            {pets.length === 0 ?
+              <div>
+                <LoaderSpinner />
+              </div>
+              :
+              pets.map(({ id, name }) => (
+                <CardPet key={id} name={name} />
+              ))
+            }
           </div>
         </div>
       </main>
