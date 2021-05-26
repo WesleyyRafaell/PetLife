@@ -40,3 +40,8 @@
   text-align: center;
   border: none;
 }
+
+.containerCreatePet form .alertError{
+  color: #ff0505bf;
+  margin: 10px;
+}

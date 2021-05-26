@@ -1,7 +1,14 @@
+import { forwardRef } from 'react';
 import './style.css';
 
-export default function TextArea({ id, rows }) {
-  return(
-    <textarea name="description" id={id} rows={rows} />
-  )
-}
+const TextArea = forwardRef(({ id, rows, ...field }, ref)=> (
+  <textarea
+    ref={ref} 
+    name="description" 
+    id={id} 
+    rows={rows}
+    {...field} 
+  />
+));
+
+export default TextArea;
