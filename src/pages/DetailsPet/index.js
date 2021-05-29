@@ -24,6 +24,7 @@ export default function DetailsPet() {
             name: snapshot.data().name,
             description: snapshot.data().description,
             socialNetworkOwner: snapshot.data().socialNetworkOwner,
+            photoPet: snapshot.data().urlPhoto,
             owner: snapshot.data().owner,
             socialNetworkPet: snapshot.data().socialNetworkPet
           })
@@ -49,6 +50,7 @@ export default function DetailsPet() {
               name={pet.name}
               description={pet.description}
               socialNetworkPet={pet.socialNetworkPet}
+              photoPet={pet.photoPet}
               owner={pet.owner}
               socialNetworkOwner={pet.socialNetworkOwner}
             />

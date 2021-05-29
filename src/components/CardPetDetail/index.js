@@ -3,11 +3,19 @@ import ownerIcon from '../../assets/owner.svg';
 
 import './style.css';
 
-export default function CardPetDetail({ name, description, owner, socialNetworkPet, socialNetworkOwner}) {
+export default function CardPetDetail({ 
+  name, 
+  description, 
+  socialNetworkPet, 
+  photoPet, 
+  owner, 
+  socialNetworkOwner
+ }) {
+   
   return (
     <div className="card">
       <div className="photoPet">
-        <img src="https://i.imgur.com/AenYVrE.jpg" alt="pet foto" />
+        <img src={photoPet} alt="pet foto" />
       </div>
       <div className="informationPet">
         <h3 className="name">{name}</h3>
