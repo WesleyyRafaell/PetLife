@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import firebase from '../../configs/FirebaseConnection';
 
-
 import './style.css';
 
 // components
