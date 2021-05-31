@@ -4,11 +4,11 @@ import truta from '../../assets/truta.svg';
 
 import './style.css';
 
-export default function CardPet({ id, name }) {
+export default function CardPet({ id, name, photo }) {
 
   return (
     <div className="pet">
-      <img src={truta} alt="pet foto" />
+      <img src={photo} alt="pet foto" />
       <h3>{name}</h3>
       <Link to={{
         pathname: '/details-pet',

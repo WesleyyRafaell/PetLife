@@ -25,9 +25,10 @@ export default function Home() {
               id: doc.id,
               name: doc.data().name,
               description: doc.data().description,
-              socialNetworkPet: doc.data().socialNetworkPet,
+              socialpet: doc.data().socialpet,
+              urlPhoto: doc.data().urlPhoto,
               owner: doc.data().owner,
-              socialNetworkOwner: doc.data().socialNetworkOwner
+              socialOwner: doc.data().socialOwner
             })
           })
 
@@ -54,8 +55,8 @@ export default function Home() {
                 <LoaderSpinner />
               </div>
               :
-              pets.map(({ id, name }) => (
-                <CardPet key={id} id={id} name={name} />
+              pets.map(({ id, name, urlPhoto }) => (
+                <CardPet key={id} id={id} name={name} photo={urlPhoto}  />
               ))
             }
           </div>
