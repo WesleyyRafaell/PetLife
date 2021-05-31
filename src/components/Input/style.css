@@ -7,3 +7,7 @@ input{
   outline: none;
   color: var(--color-tertiary);
 }
+
+input[type="file"] {
+  display: none;
+}

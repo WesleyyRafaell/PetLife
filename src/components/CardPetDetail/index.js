@@ -6,10 +6,10 @@ import './style.css';
 export default function CardPetDetail({ 
   name, 
   description, 
-  socialNetworkPet, 
+  socialpet, 
   photoPet, 
   owner, 
-  socialNetworkOwner
+  socialOwner
  }) {
    
   return (
@@ -24,11 +24,11 @@ export default function CardPetDetail({
         <footer>
           <div className="SocialItem">
             <img src={petIcon} alt="" />
-            <a target="_blank" rel="noreferrer" href={socialNetworkPet} >{socialNetworkPet}</a>
+            <a target="_blank" rel="noreferrer" href={socialpet} >{socialpet}</a>
           </div>
           <div className="SocialItem">
             <img src={ownerIcon} alt="" />
-            <a target="_blank" rel="noreferrer" href={socialNetworkOwner} >{socialNetworkOwner}</a>
+            <a target="_blank" rel="noreferrer" href={socialOwner} >{socialOwner}</a>
           </div>
         </footer>
       </div>

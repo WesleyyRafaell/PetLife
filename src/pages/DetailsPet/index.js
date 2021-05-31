@@ -23,10 +23,10 @@ export default function DetailsPet() {
           setPet({
             name: snapshot.data().name,
             description: snapshot.data().description,
-            socialNetworkOwner: snapshot.data().socialNetworkOwner,
+            socialpet: snapshot.data().socialpet,
             photoPet: snapshot.data().urlPhoto,
             owner: snapshot.data().owner,
-            socialNetworkPet: snapshot.data().socialNetworkPet
+            socialOwner: snapshot.data().socialOwner,
           })
 
         } catch (error) {
@@ -49,10 +49,10 @@ export default function DetailsPet() {
             <CardPetDetail
               name={pet.name}
               description={pet.description}
-              socialNetworkPet={pet.socialNetworkPet}
+              socialpet={pet.socialpet}
               photoPet={pet.photoPet}
               owner={pet.owner}
-              socialNetworkOwner={pet.socialNetworkOwner}
+              socialOwner={pet.socialOwner}
             />
           }
         </div>
