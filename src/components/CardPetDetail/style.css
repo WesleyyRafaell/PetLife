@@ -1,8 +1,7 @@
 .card {
   width: 320px;
   background: var(--color-white);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 .card .photoPet {

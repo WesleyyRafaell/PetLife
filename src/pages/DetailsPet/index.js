@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import firebase from '../../configs/FirebaseConnection';
+import LoaderSpinner from '../../components/Loader';
 
 
 // components 
@@ -8,7 +9,6 @@ import Header from "../../components/Header";
 import CardPetDetail from '../../components/CardPetDetail';
 
 import './style.css';
-import LoaderSpinner from '../../components/Loader';
 
 export default function DetailsPet() {
   const [pet, setPet] = useState('');
