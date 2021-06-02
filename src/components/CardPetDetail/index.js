@@ -28,14 +28,19 @@ export default function CardPetDetail({
         <p>{description}</p>
         <p className="owner">Cuidado por: {owner}</p>
         <footer>
-          <div className="SocialItem">
-            <img src={instagram} alt="" />
-            <p>{socialpet}</p>
-          </div>
-          <div className="SocialItem">
-            <img src={instagram} alt="" />
-            <p>{socialOwner}</p>
-          </div>
+          {socialpet !== '' &&
+            <div className="SocialItem">
+              <img src={instagram} alt="" />
+              <p>{socialpet}</p>
+            </div>
+          }
+
+          {socialOwner !== '' &&
+            <div className="SocialItem">
+              <img src={instagram} alt="" />
+              <p>{socialOwner}</p>
+            </div>
+          }
         </footer>
       </div>
     </div>
