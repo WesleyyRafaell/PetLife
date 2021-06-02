@@ -93,13 +93,13 @@ export default function Form() {
           <p className="alertError">{errors.name?.description}</p>
         </div>
         <div className="boxInput">
-          <label htmlFor="socialpet">O pet possui alguma rede social?</label>
+          <label htmlFor="socialpet">Insta do pet</label>
           <Input
             id="socialpet"
             type="text"
             name="socialpet"
             {...register('socialpet')}
-            placeholder="Pode deixar em branco caso não"
+            placeholder="Pode deixar em branco caso não tenha"
           />
           <p className="alertError">{errors.socialpet?.message}</p>
         </div>
@@ -112,7 +112,7 @@ export default function Form() {
           <p className="alertError">{errors.owner?.message}</p>
         </div>
         <div className="boxInput">
-          <label htmlFor="socialOwner">Sua rede social</label>
+          <label htmlFor="socialOwner">Seu insta</label>
           <Input
             type="text"
             id="socialOwner"

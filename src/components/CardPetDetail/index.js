@@ -1,5 +1,4 @@
-import petIcon from '../../assets/pet.svg';
-import ownerIcon from '../../assets/owner.svg';
+import instagram from '../../assets/instagram.svg';
 import pet from '../../assets/pet.png';
 
 import './style.css';
@@ -30,12 +29,12 @@ export default function CardPetDetail({
         <p className="owner">Cuidado por: {owner}</p>
         <footer>
           <div className="SocialItem">
-            <img src={petIcon} alt="" />
-            <a target="_blank" rel="noreferrer" href={socialpet} >{socialpet}</a>
+            <img src={instagram} alt="" />
+            <p>{socialpet}</p>
           </div>
           <div className="SocialItem">
-            <img src={ownerIcon} alt="" />
-            <a target="_blank" rel="noreferrer" href={socialOwner} >{socialOwner}</a>
+            <img src={instagram} alt="" />
+            <p>{socialOwner}</p>
           </div>
         </footer>
       </div>
