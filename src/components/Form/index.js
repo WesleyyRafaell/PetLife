@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { schema } from './schema';
 import firebase from '../../configs/FirebaseConnection';
+import { useHistory } from 'react-router-dom';
 
 // components 
 import TextArea from '../TextArea';
@@ -12,6 +13,8 @@ import './style.css';
 
 
 export default function Form() {
+  const history = useHistory();
+
   const [file, setFile] = useState(null);
   const [nameFile, setNameFile] = useState('');
 
@@ -53,6 +56,7 @@ export default function Form() {
     }
 
     reset();
+    history.push('/');
   }
 
   function handleChange(event) {
