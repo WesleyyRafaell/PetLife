@@ -64,3 +64,19 @@
   font-size: 1.1rem;
   color: #6A7CDA;
 }
+
+@media (max-width: 411px){
+  .card {
+    width: 100%;
+  }
+
+  .card .photoPet img.photoPet {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card footer .SocialItem {
+    max-width: 335px;
+    overflow: hidden;
+  }
+}

@@ -30,3 +30,9 @@ header .container .button a {
 header .container .button a img {
   width: 20px;
 }
+
+@media (max-width: 1341px){
+  header .container{
+    padding: 0 40px;
+  }
+}

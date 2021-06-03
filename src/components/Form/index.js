@@ -103,7 +103,7 @@ export default function Form() {
             type="text"
             name="socialpet"
             {...register('socialpet')}
-            placeholder="Pode deixar em branco caso não tenha"
+            placeholder="Se não tiver, deixe em branco"
           />
           <p className="alertError">{errors.socialpet?.message}</p>
         </div>
@@ -122,7 +122,7 @@ export default function Form() {
             id="socialOwner"
             name="socialOwner"
             {...register('socialOwner')}
-            placeholder="Pode deixar em branco caso não tenha"
+            placeholder="Se não tiver, deixe em branco"
           />
           <p className="alertError">{errors.socialOwner?.message}</p>
         </div>

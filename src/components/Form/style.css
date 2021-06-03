@@ -71,3 +71,19 @@
   color: #ff0505bf;
   margin: 10px;
 }
+
+@media (max-width: 656px){
+  .containerCreatePet form {
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 40px;
+  }
+
+  .containerCreatePet form .boxInput .containerInputFile {
+    flex-direction: column;
+  }
+
+  .containerCreatePet form .boxInput .containerInputFile #labelFile {
+    margin: 10px 0 20px 0;
+  }
+}
