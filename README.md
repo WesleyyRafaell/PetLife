@@ -1,6 +1,6 @@
 # Pet life
 
-### Sistema com um único e bem definido motivo: Vê o seu pet! Cadastre seu bixinho agora mesmo e mostre ele pra todo mundo.
+### Sistema com um único e bem definido motivo: Vê o seu pet. Cadastre seu bixinho agora mesmo e mostre ele pra todo mundo.
 
 ### acesse o projeto em: https://pet-life.vercel.app/
 
