@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import instagram from '../../assets/instagram.svg';
+import close from '../../assets/close.svg';
 import pet from '../../assets/pet.png';
 
 import './style.css';
@@ -12,6 +15,16 @@ export default function CardPetDetail({
   socialOwner
 }) {
 
+  const [modal, setModal] = useState(false);
+
+  function openModal() {
+    setModal(true);
+  }
+
+  function closeModal() {
+    setModal(false);
+  }
+
   return (
     <div className="card">
       <div className="photoPet">
@@ -20,7 +33,7 @@ export default function CardPetDetail({
             <img src={pet} alt="pet foto" />
           </div>
           :
-          <img src={photoPet} className="photoPet" alt="pet foto" />
+          <img src={photoPet} className="photoPet" alt="pet foto" onClick={openModal} />
         }
       </div>
       <div className="informationPet">
@@ -43,6 +56,15 @@ export default function CardPetDetail({
           }
         </footer>
       </div>
+
+      {modal && 
+        <div className="modalPhoto">
+          <div className="containerModal">
+            <button onClick={closeModal}><img src={close} alt="" /></button>
+            <img src={photoPet} className="photoPet" alt="pet foto" />
+          </div>
+        </div>
+      }
     </div>
   )
 }

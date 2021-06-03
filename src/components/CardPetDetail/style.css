@@ -23,6 +23,7 @@
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  cursor: pointer;
 }
 
 .card .informationPet {
@@ -65,6 +66,48 @@
   color: #6A7CDA;
 }
 
+/* modal  */
+.modalPhoto {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000a1;
+}
+
+.modalPhoto .containerModal {
+  width: 100%;
+  max-width: 620px;
+  height: 530px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modalPhoto .containerModal button{
+  background: no-repeat;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.modalPhoto .containerModal button img {
+  width: 20px;
+}
+
+.modalPhoto .containerModal > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 @media (max-width: 411px){
   .card {
     width: 100%;
@@ -78,5 +121,11 @@
   .card footer .SocialItem {
     max-width: 335px;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 439px) {
+  .modalPhoto .containerModal{
+    padding: 40px 20px 20px 20px;
   }
 }
