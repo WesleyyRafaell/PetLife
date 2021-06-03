@@ -11,10 +11,10 @@
 
 ```bash
 # Clone o repositório
-git clone https://github.com/WesleyyRafaell/post2b
+git clone https://github.com/WesleyyRafaell/PetLife
 
 # Entre na pasta que foi gerada
-cd post2b 
+cd PetLife 
 
 # Execute o comando
 yarn start
