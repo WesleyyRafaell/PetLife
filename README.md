@@ -1,6 +1,6 @@
 # Pet life
 
-[![licence mit](https://img.shields.io/github/license/WesleyyRafaell/PetLife)]
+[licence mit](https://img.shields.io/github/license/WesleyyRafaell/PetLife)
 
 ### Sistema com um único e bem definido motivo: Vê o seu pet. Cadastre seu bixinho agora mesmo e mostre ele pra todo mundo.
 
